@@ -101,7 +101,9 @@ hr{
 	padding:0
 }
 img{
-	border-style:none
+	border-style:none;
+	height:auto;
+	max-width:100%
 }
 svg:not(:root){
 	overflow:hidden
