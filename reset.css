@@ -102,6 +102,7 @@ hr{
 	padding:0
 }
 img{
+	display:block;
 	border-style:none;
 	height:auto;
 	max-width:100%
