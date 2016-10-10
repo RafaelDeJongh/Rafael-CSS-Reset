@@ -204,7 +204,7 @@ button:-moz-focusring,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-foc
 	font:inherit
 }
 [disabled]{
-	cursor:default
+	cursor:not-allowed
 }
 fieldset{
 	border:1px solid silver;
