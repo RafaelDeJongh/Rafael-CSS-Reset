@@ -1,5 +1,5 @@
 # Rafael-CSS-Reset
-A personal CSS reset stylesheet.
+A personal CSS reset.
 
 Full: https://rafaeldejongh.github.io/Rafael-CSS-Reset/reset.css
 
