@@ -178,8 +178,8 @@ textarea{
 input,textarea{
 	padding:.3em .5em;
 }
-input,select,textarea{
-	outline:0;
+button,input,select,textarea{
+	outline:0
 }
 button,input{
 	overflow:visible
