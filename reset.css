@@ -2,7 +2,7 @@
  * Rafael De Jongh's Personal Reset v0.2
  * github.com/RafaelDeJongh/Rafael-CSS-Reset
  *
- *Global Selector
+ * Global Selector
 --------------------*/
 html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,a,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{
 	margin:0;
@@ -48,12 +48,20 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,secti
 summary{
 	display:list-item
 }
-nav,ul,li{
+nav{
 	list-style:none
+}
+ul{
+	list-style-type:disc;
+	padding-left:25px
+}
+ol{
+	list-style-type:decimal;
+	padding-left:25px
 }
 blockquote,q{
 	quotes:none;
-	margin:0 1.5em
+	margin:1.5em;
 }
 address{
 	margin:0 0 1.5em
@@ -161,11 +169,17 @@ pre{
 /*Forms
 --------------------*/
 input,select{
-	vertical-align:middle
+	vertical-align:middle;
 }
 textarea{
 	overflow:auto;
 	resize:vertical
+}
+input,textarea{
+	padding:.3em .5em;
+}
+input,select,textarea{
+	outline:0;
 }
 button,input{
 	overflow:visible
@@ -210,9 +224,9 @@ button:-moz-focusring,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-foc
 	cursor:not-allowed
 }
 fieldset{
-	border:1px solid silver;
-	margin:0 2px;
-	padding:.35em .625em .75em
+	border:1px solid #bbb;
+	margin:.5em;
+	padding:.4em .8em .8em
 }
 legend{
 	box-sizing:border-box;
