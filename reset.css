@@ -187,9 +187,10 @@ button,input{
 button,select{
 	text-transform:none
 }
-button,html [type="button"],[type="reset"],[type="submit"]{
+button,[type="button"],[type="reset"],[type="submit"]{
 	-webkit-appearance:button;
-	cursor: pointer
+	cursor: pointer;
+	border:none
 }
 button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner{
 	border-style:none;
