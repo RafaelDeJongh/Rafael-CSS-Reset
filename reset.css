@@ -1,8 +1,16 @@
-/*
- * Rafael De Jongh's Personal Reset v0.2
- * github.com/RafaelDeJongh/Rafael-CSS-Reset
- *
- * Global Selector
+/** Rafael De Jongh's Personal Reset v0.2
+github.com/RafaelDeJongh/Rafael-CSS-Reset
+
+Table of Content
+--------------------
+- Global Selector
+- General elements
+- Typography
+- Forms
+- Media Elements
+--------------------
+
+Global Selector
 --------------------*/
 html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,a,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{
 	margin:0;
