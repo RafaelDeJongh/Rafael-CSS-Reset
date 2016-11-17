@@ -1,0 +1,209 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="all">
+<meta name="author" content="Rafa&euml;l De Jongh">
+<meta name="description" content="CSS Reset Test Page">
+<meta name="keywords" content="Reset, Css, Test, Page, Index, CSS Reset">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CSS Reset Test Page</title>
+<link rel="stylesheet" type="text/css" href="reset.css">
+<style type="text/css">
+/*This is separated styling to make the reset look more structured and is not included in the reset*/
+header{border-bottom:1px solid #ddd;padding:1em;margin-bottom:1em;position:fixed;top:0;width:100%;z-index:999;background:#fff;}
+#title{display:inline-block;font-size:1.5em}
+header nav{float:right;margin-top:5px}
+section h2:first-of-type{margin-bottom:1em;text-decoration:underline}
+section{padding:65px 0;border-bottom:1px solid #ddd}
+section:last-of-type{border:none}
+main{padding:0 1em}
+footer{text-align:center;border-top:1px solid #ddd;padding:1em;margin-top:1em}
+</style>
+</head>
+<body>
+<header>
+<a href="#general-elements" id="title">Rafa&euml;l's Personal CSS Reset</a>
+<nav>
+	<a href="#general-elements">General Elements</a> |
+	<a href="#typography">Typography</a> |
+	<a href="#forms">Forms</a> |
+	<a href="#media-elements">Media Element</a>
+</nav>
+</header>
+<main>
+<!--Start of Reset Test Page-->
+	<section id="general-elements">
+		<h2>General Elements</h2>
+		<h3>Lists</h3>
+		<h5>Unsorted List</h5>
+			<ul>
+				<li>List Item 1</li>
+				<li>List Item 2</li>
+				<li>List Item 3</li>
+			</ul>
+		<h5>Ordered List</h5>
+			<ol>
+				<li>List Item 1</li>
+				<li>List Item 2</li>
+				<li>List Item 3</li>
+			</ol>
+		<h3>Blockquote</h3>
+			<blockquote>This is a blockquote</blockquote>
+		<h3>Address Tag</h3>
+		<address>
+			For more information visit: www.rafaeldejongh.com
+			</address>
+		<h3>Summery Tag</h3>
+		<details>
+			<summary>Summary Information</summary>
+			<p>Details Information</p>
+		</details>
+		<h3>Table</h3>
+		<table>
+		<tr>
+			<th>Day</th>
+			<th>Month</th>
+			<th>Year</th>
+		</tr>
+		<tr>
+			<td>16</td>
+			<td>Nov</td>
+			<td>2016</td>
+		</tr>
+		</table>
+		<h3>Horizontal Rule</h3>
+			<hr>
+	</section>
+	<section id="typography">
+		<h2>Typography</h2>
+		<h3>Paragraph</h3>
+		<p>Lorem ipsum dolor sit amet.</p>
+		<h3>Long Paragraph</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum scelerisque, quam a aliquet lobortis, libero risus finibus metus, ut molestie leo nulla non magna. Etiam et condimentum ex, vitae efficitur enim. Vestibulum pulvinar, tortor ut suscipit ultrices, justo nisi convallis magna, ac vulputate mi lectus ac libero. Nam in sodales augue. Suspendisse vitae nibh risus. Etiam ac aliquet nisl. Ut eget nibh quis tortor imperdiet pellentesque eu vitae massa. Suspendisse posuere ullamcorper mauris, et pharetra erat egestas mollis. Quisque et enim semper, convallis erat eget, pretium nulla.</p>
+		<h3>Headings</h3>
+		<h1>Heading 1</h1>
+		<h2>Heading 2</h2>
+		<h3>Heading 3</h3>
+		<h4>Heading 4</h4>
+		<h5>Heading 5</h5>
+		<h6>Heading 6</h6>
+		<h3>Anchor Points</h3>
+		<a href="http://www.rafaeldejongh.com/" target="_blank">This is a link to: www.rafaeldejongh.com</a>
+		<h3>Strong</h3>
+		<strong>Strong Text</strong>
+		<h3>Big</h3>
+		<big>This is big text</big>
+		<h3>Small</h3>
+		<small>This is small text</small>
+		<h3>Deleted</h3>
+		<del>This is text that is deleted</del>
+		<h3>Inserted</h3>
+		<ins>This is text that is inserted</ins>
+		<h3>Subscript</h3>
+		<sub>This is subscript text</sub>
+		<h3>Superscript</h3>
+		<sup>This is subscript text</sup>
+		<h3>Marked Text</h3>
+		<mark>This is marked text</mark>
+		<h3>Abbreviation</h3>
+		<abbr title="Rafa&euml;l De Jongh">RDJ</abbr>
+		<h3>Defining Instance</h3>
+		<p>Regular text <dfn>Defining Item of a text</dfn> regular text</p>
+		<h3>Pre|Code|Samp|Var</h3>
+		<pre>
+<var>/*This is separated styling to make the reset look more structured and is not included in the reset*/</var>
+header{border-bottom:1px solid #ddd;padding:1em;margin-bottom:1em;position:fixed;top:0;width:100%;z-index:999;background:#fff;}
+#title{display:inline-block;font-size:1.5em}
+header nav{float:right;margin-top:5px}
+section{padding:65px 0;border-bottom:1px solid #ddd}
+main{padding:0 1em}
+footer{text-align:center;border-top:1px solid #ddd;padding:1em;margin-top:1em}
+		</pre>
+	</section>
+	<section id="forms">
+	<h2>Forms</h2>
+	<form action="#">
+		<h3>Text Input Field</h3>
+			<input type="text" name="input" required>
+		<h3>Number Input Field</h3>
+			<input type="number" name="number">
+		<h3>Password Input Field</h3>
+			<input type="password" name="password">
+		<h3>E-mail Input Field</h3>
+			<input type="email" name="email">
+		<h3>Patterned Input Field</h3>
+			<input type="text" name="date" pattern='\d{1,2}/\d{1,2}/\d{4}' placeholder='DD/MM/YYYY' required/>
+		<h3>Date Input Field</h3>
+			<input type="date" name="date">
+		<h3>Text Input Field & Label</h3>
+			<label for="inputl">Input Label:</label>
+			<input type="text" name="inputl" id="inputl" placeholder="Placeholder Inputfield" maxlength="25">
+		<h3>Disabled Input Field</h3>
+			<input type="text" name="text" disabled>
+		<h3>Textarea</h3>
+			<textarea name="textarea"></textarea>
+		<h3>Radio Buttons</h3>
+			<input type="radio" name="vote" value="yes" checked>Yes
+			<input type="radio" name="vote" value="no">No
+		<h3>Checkboxes</h3>
+			<input type="checkbox" name="skills" value="code">I can code
+			<input type="checkbox" name="skills" value="texture">I can texture
+		<h3>Dropdown Box</h3>
+		<select name="dropdown">
+			<option value="1">Easy</option>
+			<option value="2">Medium</option>
+			<option value="3">Hard</option>
+		</select>
+		<h3>Datalist</h3>
+			<input list="datalist" name="datalist">
+		<datalist id="datalist">
+			<option value="Easy">
+			<option value="Medium">
+			<option value="Hard">
+		</datalist>
+		<h3>File Upload</h3>
+		<input type='file' name='imageupload' id='imageupload'>
+		<h3>Buttons</h3>
+			<input type="submit" value="Submit">
+			<input type="reset" value="Reset">
+			<button>Click Me!</button>
+		<h3>Fieldset & Legend</h3>
+			<fieldset>
+				<legend>I am the legend</legend>
+				<p>This is a paragraph in the fieldset.</p>
+			</fieldset>
+	</form>
+	</section>
+	<section id="media-elements">
+	<h2>Media Element</h2>
+	<h3>Progress</h3>
+	<progress></progress>
+	<h3>Figure</h3>
+	<figure>
+		<img src="http://files.gamebanana.com/bitpit/rafaeldejonghslogo.svg" width="128" alt="Rafael De Jongh's SVG Logo"/>
+		<figcaption>This is the figcaption of a Small SVG Image</figcaption>
+	</figure>
+	<h3>Images</h3>
+	<h4>Medium Image</h4>
+	<img src="http://files.gamebanana.com/bitpit/rafaeldejonghslogo.png" alt="Rafael De Jongh's Logo"/>
+	<h4>Big Image</h4>
+	<img src="http://files.gamebanana.com/bitpit/rafaeldejonghsheader.jpg" alt="Rafael De Jongh's Header"/>
+	<h4>SVG Image</h4>
+	<img src="http://files.gamebanana.com/bitpit/rafaeldejonghslogo.svg" alt="Rafael De Jongh's SVG Logo"/>
+	<h3>Audio</h3>
+	<audio controls>
+		<source src="http://files.gamebanana.com/bitpit/rafa_l_de_jongh_-_2d-3d_artist_-_80.mp3" type="audio/mpeg">
+	</audio>
+	<h3>Video</h3>
+	<video controls>
+		<source src="http://files.gamebanana.com/bitpit/rafa_l_de_jongh_-_2d3d_artist_-_80_.mp4" type="video/mp4">
+	</video>
+	<h3>Iframe</h3>
+	<iframe src="https://www.youtube.com/embed/HMD8kAHJA2c" allowfullscreen></iframe>
+	</section>
+<!--End of Reset Test Page-->
+</main>
+<footer>Copyright &copy; 2016 | Rafa&euml;l De Jongh | All Rights Reserved.</footer>
+</body>
+</html>
