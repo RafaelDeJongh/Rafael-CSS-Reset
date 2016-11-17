@@ -1,4 +1,4 @@
-/** Rafael De Jongh's Personal Reset v0.2
+/** Rafael De Jongh's Personal Reset v0.3
 github.com/RafaelDeJongh/Rafael-CSS-Reset
 
 Table of Content
@@ -12,7 +12,7 @@ Table of Content
 
 Global Selector
 --------------------*/
-html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,a,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,a,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,summary,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{
 	margin:0;
 	padding:0;
 	border:0;
@@ -37,9 +37,7 @@ html{
 }
 ::before,::after{
 	text-decoration:inherit;
-	vertical-align:inherit
-}
-img,::before,::after{
+	vertical-align:inherit;
 	-webkit-backface-visibility:hidden
 }
 body{
@@ -52,9 +50,6 @@ body{
 --------------------*/
 article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{
 	display:block
-}
-summary{
-	display:list-item
 }
 nav{
 	list-style:none
@@ -69,13 +64,16 @@ ol{
 }
 blockquote,q{
 	quotes:none;
-	margin:1.5em;
-}
-address{
-	margin:0 0 1.5em
+	margin:1em;
 }
 blockquote:before,blockquote:after,q:before,q:after{
 	content:none
+}
+address{
+	margin:1.5em 0 
+}
+summary{
+	display:list-item
 }
 table{
 	border-collapse:collapse;
@@ -93,7 +91,8 @@ hr{
 /*Typography
 --------------------*/
 h1,h2,h3,h4,h5,h6{
-	clear:both
+	clear:both;
+	margin:.5em 0 .35em
 }
 h1{
 	font-size:2em
@@ -111,11 +110,13 @@ h5{
 	font-size:1.2em
 }
 h6{
-	font-size:1.1em
+	font-size:.9em
 }
 a{
 	background:transparent;
 	-webkit-text-decoration-skip:objects;
+	text-decoration:none;
+	border-bottom:1px solid;
 }
 a:active,a:hover{
 	outline-width:0
@@ -130,9 +131,12 @@ small{
 	font-size:80%
 }
 ins{
-	background-color:#ff9;
-	color:#000;
+	background-color:#9ccc65;
 	text-decoration:none
+}
+del{
+	background-color:#f44336;
+	text-decoration:line-through
 }
 sub,sup{
 	font-size:75%;
@@ -153,9 +157,6 @@ mark{
 	font-weight:700;
 	text-decoration:none
 }
-del{
-	text-decoration:line-through
-}
 abbr[title],dfn[title],acronym{
 	border-bottom:1px dotted;
 	cursor:help
@@ -165,14 +166,12 @@ dfn{
 }
 code,kbd,tt,var,pre,samp{
 	font-family:monospace, monospace;
-	font-size:1em
+	font-size:1em;
 }
 pre{
-	line-height:1.6;
-	margin-bottom:1.6em;
 	max-width:100%;
 	overflow:auto;
-	padding:1.6em
+	padding:.6em
 }
 /*Forms
 --------------------*/
@@ -183,8 +182,8 @@ textarea{
 	overflow:auto;
 	resize:vertical
 }
-input,textarea{
-	padding:.3em .5em;
+input,textarea,button{
+	padding:.3em .5em
 }
 button,input,select,textarea{
 	outline:0
@@ -225,17 +224,23 @@ button:-moz-focusring,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-foc
 	color:inherit;
 	opacity:.54
 }
+[type="file"]{
+	padding-left:0
+}
 ::-webkit-file-upload-button{
 	-webkit-appearance:button;
-	font:inherit
+	font:inherit;
+	border:none;
+	outline:0;
+	padding:.3em .5em
 }
 [disabled]{
 	cursor:not-allowed
 }
 fieldset{
 	border:1px solid #bbb;
-	margin:.5em;
-	padding:.4em .8em .8em
+	margin:.5em 0;
+	padding:.8em
 }
 legend{
 	box-sizing:border-box;
@@ -252,15 +257,19 @@ img{
 	display:block;
 	border-style:none;
 	height:auto;
-	max-width:100%
+	max-width:100%;
+	-webkit-backface-visibility:hidden
 }
 svg:not(:root){
 	overflow:hidden
 }
-figure{
-	margin:1em 40px
+iframe,video{
+	height:55vw;
+	width:100%;
+	max-width:100%;
+	min-height:65%;
 }
-audio,canvas,progress,video{
+audio,canvas,progress,video,iframe{
 	display:inline-block
 }
 audio:not([controls]){
