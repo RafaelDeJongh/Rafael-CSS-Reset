@@ -6,4 +6,4 @@ Minimised: https://rafaeldejongh.github.io/Rafael-CSS-Reset/reset.min.css
 
 ***
 
-HTML Reset Test Page: https://rafaeldejongh.github.io/Rafael-CSS-Reset
+CSS Reset Test Page: https://rafaeldejongh.github.io/Rafael-CSS-Reset
