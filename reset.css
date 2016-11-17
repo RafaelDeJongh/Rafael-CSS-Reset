@@ -152,6 +152,7 @@ mark{
 	text-decoration:none
 }
 abbr[title],dfn[title],acronym{
+	text-decoration:none;
 	border-bottom:1px dotted;
 	cursor:help
 }
