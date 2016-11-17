@@ -124,12 +124,6 @@ a:active,a:hover{
 b,strong,optgroup{
 	font-weight:700
 }
-big{
-	font-size:125%
-}
-small{
-	font-size:80%
-}
 ins{
 	background-color:#9ccc65;
 	text-decoration:none
