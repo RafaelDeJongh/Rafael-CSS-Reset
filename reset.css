@@ -227,7 +227,8 @@ button:-moz-focusring,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-foc
 	font:inherit;
 	border:none;
 	outline:0;
-	padding:.3em .5em
+	padding:.3em .5em;
+	cursor:pointer
 }
 [disabled]{
 	cursor:not-allowed
