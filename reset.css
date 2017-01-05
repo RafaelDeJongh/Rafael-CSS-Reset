@@ -125,7 +125,6 @@ b,strong,optgroup{
 	font-weight:700
 }
 ins{
-	background-color:#9ccc65;
 	text-decoration:none
 }
 del{
@@ -259,7 +258,7 @@ img{
 svg:not(:root){
 	overflow:hidden
 }
-iframe,video{
+video{
 	height:55vw;
 	width:100%;
 	max-width:100%;
