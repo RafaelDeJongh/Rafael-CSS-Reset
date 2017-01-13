@@ -125,7 +125,7 @@ b,strong,optgroup{
 	font-weight:700
 }
 ins{
-	text-decoration:none
+	text-decoration:underline
 }
 del{
 	background-color:#f44336;
